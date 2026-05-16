@@ -86,7 +86,7 @@ export default function Skills() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px] opacity-10" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         <div className="mb-12 lg:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 text-center md:text-left">
           <div className="w-full md:w-auto">
             <motion.div

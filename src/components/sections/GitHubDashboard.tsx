@@ -57,7 +57,7 @@ export default function GitHubDashboard() {
 
   return (
     <section id="telemetry" className="py-32 px-6 relative overflow-hidden bg-brand-deep">
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <motion.div

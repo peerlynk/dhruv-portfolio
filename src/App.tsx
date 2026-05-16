@@ -50,7 +50,7 @@ export default function App() {
   return (
     <main className="relative selection:bg-neon-purple selection:text-white bg-brand-deep">
       <LoadingScreen />
-      
+
       <div className={`transition-opacity duration-1000 ${!isLoading ? 'opacity-100' : 'opacity-0'}`}>
         <CustomCursor />
         <BackgroundSystem />
@@ -62,9 +62,9 @@ export default function App() {
         <SectionDivider />
         <Projects />
         <SectionDivider />
-        <Methodology />
-        <SectionDivider />
         <Timeline />
+        <SectionDivider />
+        <Methodology />
         <SectionDivider />
         <GitHubDashboard />
         <SectionDivider />

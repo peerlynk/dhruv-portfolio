@@ -43,7 +43,7 @@ const principles = [
 export default function Methodology() {
   return (
     <section id="philosophy" className="py-32 px-6 relative overflow-hidden bg-brand-deep">
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         <div className="mb-24 text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0 }}

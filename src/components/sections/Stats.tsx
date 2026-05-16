@@ -55,7 +55,7 @@ export default function Stats() {
 
   return (
     <section id="metrics" ref={containerRef} className="py-32 px-6 relative overflow-hidden bg-brand-deep">
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-24">
           <div>
             <motion.div

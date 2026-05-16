@@ -38,14 +38,14 @@ export default function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-5 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[calc(100%-40px)] max-w-4xl",
-          isScrolled ? "py-2 px-6 glass rounded-full" : "py-4 px-8"
+          "fixed top-2 md:top-5 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[calc(100%-32px)] md:w-[calc(100%-40px)] max-w-4xl",
+          isScrolled ? "py-2 px-4 md:px-6 glass rounded-full" : "py-3 px-4 md:py-4 md:px-8"
         )}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between h-[40px] md:h-auto">
           {/* Logo */}
           <div
-            className="text-2xl font-bold cursor-pointer group flex items-center"
+            className="text-xl md:text-2xl font-bold cursor-pointer group flex items-center"
             onClick={() => scrollTo('home')}
           >
             <span className="text-neon-purple group-hover:text-cyan-glow transition-colors">{'{'}</span>

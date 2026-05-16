@@ -47,7 +47,7 @@ const journeySteps = [
 export default function MyJourney() {
   return (
     <section className="py-24 px-4 md:px-6 bg-gradient-to-br from-black via-gray-900 to-black">
-      <div className="max-w-6xl mx-auto">
+      <div className="app-container">
         {/* Header */}
         <div className="text-center mb-20">
           <motion.div

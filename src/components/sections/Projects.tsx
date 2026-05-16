@@ -81,7 +81,7 @@ export default function Projects() {
       {/* Background Section Glows */}
       <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-cyan-glow/5 to-transparent blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <motion.div

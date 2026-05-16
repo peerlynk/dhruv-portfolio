@@ -131,7 +131,7 @@ export default function Timeline() {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         {/* Header */}
         <div className="mb-32 text-center max-w-4xl mx-auto">
           <motion.div

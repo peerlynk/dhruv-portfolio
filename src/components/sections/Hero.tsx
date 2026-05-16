@@ -170,7 +170,7 @@ export default function Hero() {
     <section
       id="home"
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 px-6 md:px-12"
+      className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden"
     >
       {/* Background Layered Content - Realistic Monitors */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
@@ -244,9 +244,9 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10 lg:pl-16">
+      <div className="app-container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10 mx-auto justify-items-center mt-20 lg:mt-0">
         {/* Left SideContent */}
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left flex flex-col items-center lg:items-start w-full max-w-xl">
           {/* Terminal Intro */}
           <div className="mb-8 h-6">
             <span className="font-mono text-cyan-glow text-sm tracking-widest flex items-center justify-center lg:justify-start">
@@ -255,14 +255,14 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="hero-title mb-8">
-            <div className="hero-title-main text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 font-display text-7xl sm:text-8xl md:text-[11rem] font-black leading-[0.8] tracking-tighter drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+          <h1 className="hero-title mb-6 md:mb-8">
+            <div className="hero-title-main text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 font-display text-5xl sm:text-7xl md:text-[11rem] font-black leading-[1.1] md:leading-[0.8] tracking-tighter drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
               Dhruv Pal
             </div>
           </h1>
 
-          <div className="hero-subtitle mb-8 relative">
-            <h2 className="text-xl md:text-2xl font-bold font-mono tracking-widest text-cyan-glow uppercase">
+          <div className="hero-subtitle mb-6 md:mb-8 relative">
+            <h2 className="text-sm sm:text-xl md:text-2xl font-bold font-mono tracking-widest text-cyan-glow uppercase leading-relaxed">
               Software Engineer • System Builder • Founder
             </h2>
           </div>
@@ -271,24 +271,24 @@ export default function Hero() {
             Architecting <span className="text-white font-medium">scalable digital ecosystems</span> for the future of connected student infrastructure.
           </p>
 
-          <div className="hero-cta flex flex-wrap gap-6 justify-center lg:justify-start items-center">
+          <div className="hero-cta flex flex-col lg:flex-row gap-4 justify-center lg:justify-start items-center w-full">
             <button 
               onClick={scrollToSystems}
-              className="interactive px-10 py-5 bg-cyan-glow text-brand-deep hover:bg-white rounded-2xl font-black text-xs tracking-widest uppercase transition-all flex items-center gap-3 group shadow-[0_20px_40px_-10px_rgba(6,182,212,0.4)]"
+              className="interactive w-[90%] lg:w-auto px-6 lg:px-10 py-4 lg:py-5 bg-cyan-glow text-brand-deep hover:bg-white rounded-2xl font-black text-xs tracking-widest uppercase transition-all flex items-center justify-center gap-3 group shadow-[0_20px_40px_-10px_rgba(6,182,212,0.4)]"
             >
               Explore Systems
               <Zap size={18} className="fill-current animate-pulse" />
             </button>
             <button 
               onClick={scrollToSystems}
-              className="interactive px-10 py-5 glass border border-white/10 rounded-2xl font-bold text-white text-sm hover:border-cyan-glow/50 hover:bg-white/5 transition-all flex items-center gap-3 group"
+              className="interactive w-[90%] lg:w-auto px-6 lg:px-10 py-4 lg:py-5 glass border border-white/10 rounded-2xl font-bold text-white text-sm hover:border-cyan-glow/50 hover:bg-white/5 transition-all flex items-center justify-center gap-3 group"
             >
               View Architecture
               <ExternalLink size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform opacity-40 group-hover:opacity-100" />
             </button>
             <button 
               onClick={scrollToContact}
-              className="interactive text-white/40 hover:text-white font-bold transition-all flex items-center gap-2 px-4 group text-sm"
+              className="interactive w-[90%] lg:w-auto py-4 lg:py-0 text-white/40 hover:text-white font-bold transition-all flex items-center justify-center gap-2 px-4 group text-sm"
             >
               Contact
               <Mail size={18} className="group-hover:scale-110 transition-transform opacity-40 group-hover:opacity-100" />
@@ -297,8 +297,8 @@ export default function Hero() {
         </div>
 
         {/* Right Side Image */}
-        <div className="relative flex justify-center items-center">
-          <div className="relative w-full max-w-lg perspective-1000">
+        <div className="relative flex justify-center items-center w-full mt-10 lg:mt-0">
+          <div className="relative w-[80%] md:w-full max-w-[280px] md:max-w-lg perspective-1000">
             {/* Glow Portal */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-cyan-glow/10 blur-[150px] rounded-full -z-10" />
 

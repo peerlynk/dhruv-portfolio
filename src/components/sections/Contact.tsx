@@ -19,7 +19,7 @@ export default function Contact() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="app-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
           {/* Left Side: Connection Info */}
           <div>
@@ -42,7 +42,7 @@ export default function Contact() {
               {[
                 { icon: <Mail size={22} />, label: 'Email', value: 'pal664908@gmail.com', href: 'mailto:pal664908@gmail.com', color: 'text-neon-purple' },
                 { icon: <MapPin size={22} />, label: 'Location', value: 'India', href: '#', color: 'text-cyan-glow' },
-                { icon: <Briefcase size={22} />, label: 'Lead Contact', value: '8439621339', href: 'tel:8439621339', color: 'text-magenta' }
+                { icon: <Briefcase size={22} />, label: 'Lead Contact', value: '+91 8439621339', href: 'tel:8439621339', color: 'text-magenta' }
               ].map((item, i) => (
                 <motion.a
                   key={i}

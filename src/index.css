@@ -18,13 +18,26 @@
 }
 
 @layer base {
-  body {
-    @apply bg-brand-deep text-[#CBD5E1] antialiased overflow-x-hidden font-sans;
+  html, body {
+    @apply bg-brand-deep text-[#CBD5E1] antialiased font-sans;
+    overflow-x: hidden;
+    width: 100%;
     cursor: none;
   }
 
   h1, h2, h3, h4, .font-display {
     @apply font-display tracking-tighter font-extrabold;
+  }
+
+  section {
+    @apply w-full flex flex-col items-center justify-center relative py-12;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
   }
 
   /* Custom Scrollbar */
@@ -41,6 +54,10 @@
 }
 
 @layer utilities {
+  .app-container {
+    @apply w-full px-4 md:px-6 lg:px-0 lg:w-[calc(100%-40px)] max-w-6xl mx-auto;
+  }
+
   .glass {
     @apply backdrop-blur-[16px] bg-[#0A0A0F]/60 border border-white/10;
   }

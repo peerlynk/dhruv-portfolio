@@ -28,7 +28,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-24 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="app-container">
         <div className="text-center mb-16">
           <div className="text-neon-purple font-mono text-sm tracking-[0.3em] uppercase mb-4">
              Social Proof
